@@ -13,3 +13,15 @@ O OCI Language capacita os desenvolvedores com modelos pré-treinados prontos pa
 1 - Navegue até o OCI Language
 Navegue até o idioma OCI. Faça login no OCI Cloud Console. Usando o menu Burger no canto superior esquerdo, navegue até o menu Analytics e AI e clique nele e selecione o item Idioma em serviços AI.
 ![_](./Imagens/IMG_001.PNG)
+
+2 - Digite o texto
+Digite seu texto na caixa de diálogo para analisar.
+
+![_](./Imagens/IMG_002.PNG)
+
+Abaixo estão alguns exemplos para o texto:
+
+´O crescimento do mercado pet no ano da pandemia – números
+Parcela de clientes do Nubank que fizeram compras pela internet para seus bichinhos aumentou 80% no comparativo com 2019. 
+Leia mais em: https://veja.abril.com.br/coluna/radar/o-crescimento-do-mercado-pet-no-ano-da-pandemia-numeros/´
+
