@@ -21,11 +21,15 @@ Digite seu texto na caixa de diálogo para analisar.
 
 Abaixo estão alguns exemplos para o texto:
 
-`O crescimento do mercado pet no ano da pandemia – números
+```
+O crescimento do mercado pet no ano da pandemia – números
 Parcela de clientes do Nubank que fizeram compras pela internet para seus bichinhos aumentou 80% no comparativo com 2019. 
-Leia mais em: https://veja.abril.com.br/coluna/radar/o-crescimento-do-mercado-pet-no-ano-da-pandemia-numeros/`
+Leia mais em: https://veja.abril.com.br/coluna/radar/o-crescimento-do-mercado-pet-no-ano-da-pandemia-numeros/
+```
 
-`In 2020 people worldwide moved to working remotely because of the COVID-19 pandemic. As a result, collaborative tools like video conferencing, email and chat have become critical, as they allow employees to perform their jobs from home.`
+```
+In 2020 people worldwide moved to working remotely because of the COVID-19 pandemic. As a result, collaborative tools like video conferencing, email and chat have become critical, as they allow employees to perform their jobs from home.
+```
 
 3 - Clique em Analisar
 
