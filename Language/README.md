@@ -28,9 +28,10 @@ Leia mais em: https://veja.abril.com.br/coluna/radar/o-crescimento-do-mercado-pe
 `In 2020 people worldwide moved to working remotely because of the COVID-19 pandemic. As a result, collaborative tools like video conferencing, email and chat have become critical, as they allow employees to perform their jobs from home.`
 
 3 - Clique em Analisar
+
 Você pode analisar o texto clicando no botão Analyze.
 
-![_](./Imagens/IMG_003.PNG)
+![_](./Imagens/IMG_003.png)
 
 ## Visualizando os resultados
 Depois de analisar seu texto, o serviço do Language exibe os resultados por categoria para as ferramentas selecionadas da seguinte forma:
@@ -38,7 +39,7 @@ Depois de analisar seu texto, o serviço do Language exibe os resultados por cat
 1 - Language Detection
 Lista, por porcentagem de confiança, os idiomas detectados.
 
-![_](./Imagens/IMG_004.PNG)
+![_](./Imagens/IMG_004.png)
 
 
 
