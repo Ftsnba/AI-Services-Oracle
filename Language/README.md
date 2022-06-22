@@ -76,6 +76,24 @@ Clique no botão Mostrar resultados padrão para sair da visualização JSON.
 
 ![_](./Imagens/IMG_010.png)
 
+# Acesse OCI Language com SDKs 
+
+O Oracle Cloud Infrastructure fornece vários Kits de Desenvolvimento de Software (SDKs) para facilitar o desenvolvimento de soluções personalizadas. Os SDKs permitem que você crie e implante aplicativos que se integram aos serviços do Oracle Cloud Infrastructure. Cada SDK também inclui ferramentas e artefatos necessários para desenvolver um aplicativo, como amostras de código e documentação. Além disso, se você quiser contribuir com o desenvolvimento dos SDKs, todos eles são de código aberto e estão disponíveis no GitHub.
+Você pode invocar os recursos do OCI Language por meio dos SDKs OCI. Nesta sessão de laboratório, vários trechos de código serão mostrados para acessar o OCI Language por meio dos SDKs OCI. Você não precisa executar os snippets, mas revise-os para entender quais informações e etapas são necessárias para implementar sua própria integração. Além disso, você pode encontrar exemplos de linguagem OCI em diferentes linguagens de programação neste [repositório do github.](https://github.com/oracle-samples/oci-data-science-ai-samples/tree/master/ai_services/language)
+
+1 - [SDK Para Java](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/javasdk.htm#SDK_for_Java)
+
+2 - [SDK Para Python](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/pythonsdk.htm#SDK_for_Python)
+
+3 - [SDK Para TypeScript e JavaScript](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/typescriptsdk.htm#SDK_for_TypeScript_and_JavaScript)
+
+4 - [SDK Para .NET](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/dotnetsdk.htm#SDK_for_NET)
+
+5 - [SDK Para Go](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/gosdk.htm#SDK_for_Go)
+
+6 - [SDK Para Ruby](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/rubysdk.htm#SDK_for_Ruby)
+
+
 
 
 
