@@ -12,4 +12,4 @@ O OCI Language capacita os desenvolvedores com modelos pré-treinados prontos pa
 
 1 - Navegue até o OCI Language
 Navegue até o idioma OCI. Faça login no OCI Cloud Console. Usando o menu Burger no canto superior esquerdo, navegue até o menu Analytics e AI e clique nele e selecione o item Idioma em serviços AI.
-![_](./Images/IMG_001.PNG)
+![_](./Imagens/IMG_001.PNG)
