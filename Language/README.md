@@ -93,6 +93,16 @@ Você pode invocar os recursos do OCI Language por meio dos SDKs OCI. Nesta sess
 
 6 - [SDK Para Ruby](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/rubysdk.htm#SDK_for_Ruby)
 
+## Chave de assinatura da API de configuração e arquivo de configuração
+
+**Pré-requisito: Antes de gerar um par de chaves, crie o diretório .oci em seu diretório inicial para armazenar as credenciais.**
+
+Mac OS / Linux:
+
+```mkdir ~/.oci
+```
+
+
 
 
 
