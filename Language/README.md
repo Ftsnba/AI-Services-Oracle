@@ -21,7 +21,7 @@ Digite seu texto na caixa de diálogo para analisar.
 
 Abaixo estão alguns exemplos para o texto:
 
-´O crescimento do mercado pet no ano da pandemia – números
+`O crescimento do mercado pet no ano da pandemia – números
 Parcela de clientes do Nubank que fizeram compras pela internet para seus bichinhos aumentou 80% no comparativo com 2019. 
-Leia mais em: https://veja.abril.com.br/coluna/radar/o-crescimento-do-mercado-pet-no-ano-da-pandemia-numeros/´
+Leia mais em: https://veja.abril.com.br/coluna/radar/o-crescimento-do-mercado-pet-no-ano-da-pandemia-numeros/`
 
