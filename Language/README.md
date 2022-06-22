@@ -107,9 +107,173 @@ Mac OS / Linux:
 mkdir ~/.oci
 ```
 
+Windows:
+
+```
+mkdir %HOMEDRIVE%%HOMEPATH%\.oci
+```
+
+### Gerar um par de chaves de assinatura de API
+
+1 - Abra as configurações do usuário
+
+Abra o menu Perfil (ícone do menu Usuário) e clique em Configurações do usuário.
+
+![_](./Imagens/IMG_011.PNG)
+
+2 - Chave API 
+
+Navegue até a chave de API e clique em Adicionar chave de API.
+
+![_](./Imagens/IMG_012.PNG)
+
+3 - Gerar chave de API
+
+Na caixa de diálogo, selecione Gerar par de chaves de API. Clique em Baixar chave privada e salve a chave em seu diretório .oci e clique em Adicionar.
+
+![_](./Imagens/IMG_013.PNG)
+
+4 - Gerar arquivo de configuração
+
+Copie os valores mostrados no console.
+
+![_](./Imagens/IMG_014.PNG)
+
+Crie um arquivo de configuração na pasta .oci e cole os valores copiados. Substitua o valor key_file pelo caminho de sua chave de API gerada.
+
+![_](./Imagens/IMG_015.PNG)
+
+## Pré-requisitos e configuração para Python
+
+Por favor, siga os passos na ordem descrita. Antes de prosseguir, certifique-se de ter a versão 3.x do Python e que ela esteja disponível na linha de comando. Você pode verificar isso simplesmente executando:
+
+```
+python --version
+```
+
+Se você não tiver Python, instale a versão 3.x mais recente [python.org](https://www.python.org/)
+
+Além disso, você precisará ter certeza de que tem pip disponível. Você pode verificar isso executando:
+
+```
+pip --version
+```
+
+Se você instalou o Python a partir da fonte, com um instalador do python.org ou via Homebrew, você já deve ter o pip. Se você estiver no Linux e instalado usando o gerenciador de pacotes do sistema operacional, talvez seja necessário instalar o pip separadamente.
+
+1 - Criar ambiente virtual
+
+Para criar um ambiente virtual, execute o módulo venv como um script conforme mostrado abaixo
+
+```
+python3 -m venv <name of virtual environment>
+```
+2 - Ativar virtualenv
+
+Depois de criar um ambiente virtual, você pode ativá-lo.
+
+Mac OS/Linux:
+
+```
+source <name of virtual environment>/bin/activate
+```
+
+Windows:
+
+```
+<name of virtual environment>\Scripts\activate
+```
+
+3 - Instalar OCI
+
+Agora instale oci executando:
+
+```
+pip install oci
+```
+
+## Amostra de código do SDK do serviço do OCI Language
+
+**Python Code**
+
+```
+import oci
+
+config = oci.config.from_file('/.oci/config')
+ai_client = oci.ai_language.AIServiceLanguageClient(config=config)
+#Input Text
+text1 = "The Indy Autonomous Challenge is the worlds first head-to-head, high speed autonomous race taking place at the Indianapolis Motor Speedway"
+text2 = "Using high-performance GPU systems in the Oracle Cloud, OCI will be the cloud engine for the artificial intelligence models that drive the MIT Driverless cars competing in the Indy Autonomous Challenge."
+
+#language Detection of Input Documents
+doc1 = oci.ai_language.models.DominantLanguageDocument(key="doc1", text=text1)
+doc2 = oci.ai_language.models.DominantLanguageDocument(key="doc2", text=text2)
+documents = [doc1, doc2]
+
+batch_detect_dominant_language_details = oci.ai_language.models.BatchDetectDominantLanguageDetails(documents=documents)
+output = ai_client.batch_detect_dominant_language(batch_detect_dominant_language_details)
+print(output.data)
 
 
+#Text Classification of Input Documents
+doc1 = oci.ai_language.models.TextClassificationDocument(key="doc1", text=text1)
+doc2 = oci.ai_language.models.TextClassificationDocument(key="doc2", text=text2)
+documents = [doc1, doc2]
+
+batch_detect_language_text_classification_details = oci.ai_language.models.BatchDetectLanguageTextClassificationDetails(documents=documents)
+output = ai_client.batch_detect_language_text_classification(batch_detect_language_text_classification_details)
+print(output.data)
 
 
+#Named Entity Recoginiton of Input Documents
+doc1 = oci.ai_language.models.EntityDocument(key="doc1", text=text1)
+doc2 = oci.ai_language.models.EntityDocument(key="doc2", text=text2)
+documents = [doc1, doc2]
+
+batch_detect_language_entities_details = oci.ai_language.models.BatchDetectLanguageEntitiesDetails(documents=documents)
+output = ai_client.batch_detect_language_entities(batch_detect_language_entities_details)
+print(output.data)
+
+
+#Key Phrase Detection of Input Documents
+doc1 = oci.ai_language.models.KeyPhraseDocument(key="doc1", text=text1)
+doc2 = oci.ai_language.models.KeyPhraseDocument(key="doc2", text=text2)
+documents = [doc1, doc2]
+
+batch_detect_language_key_phrases_details = oci.ai_language.models.BatchDetectLanguageKeyPhrasesDetails(documents=documents)
+output = ai_client.batch_detect_language_key_phrases(batch_detect_language_key_phrases_details)
+print(output.data)
+
+
+#Aspect based and Sentence level Sentiment Analysis of Input Documents
+doc1 = oci.ai_language.models.SentimentsDocument(key="doc1", text=text1)
+doc2 = oci.ai_language.models.SentimentsDocument(key="doc2", text=text2)
+documents = [doc1, doc2]
+
+batch_detect_language_sentiment_details = oci.ai_language.models.BatchDetectLanguageSentimentsDetails(documents=documents)
+output = ai_client.batch_detect_language_sentiments(batch_detect_language_sentiment_details,  level=["ASPECT","SENTENCE"])
+print(output.data)
+```
+
+Siga as etapas abaixo para executar o SDK do Python:
+
+1 - Baixe o código Python.
+
+Baixe o arquivo de [código](https://oracle.github.io/learning-library/oci-library/oci-hol/oci-artificial-intelligence/ai-language/ai-language-sdk/files/language.py) e salve-o em seu diretório.
+
+2 - Execute o Código.
+
+Navegue até o diretório onde você salvou o arquivo acima (por padrão, ele deve estar na pasta 'Downloads') usando seu terminal e execute o arquivo executando:
+
+```
+python language.py
+```
+
+3 - Resultados
+
+Você verá o resultado como abaixo
+
+
+![_](./Imagens/IMG_016.PNG)
 
 
