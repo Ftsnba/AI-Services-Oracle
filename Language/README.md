@@ -276,4 +276,6 @@ Você verá o resultado como abaixo
 
 ![_](./Imagens/IMG_016.PNG)
 
+## Parabéns Por concluir este laboratório :clap:
+
 
