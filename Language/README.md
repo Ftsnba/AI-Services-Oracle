@@ -99,7 +99,9 @@ Você pode invocar os recursos do OCI Language por meio dos SDKs OCI. Nesta sess
 
 Mac OS / Linux:
 
-```mkdir ~/.oci```
+```
+mkdir ~/.oci
+```
 
 
 
